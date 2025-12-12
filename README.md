@@ -1,7 +1,5 @@
 # NTU_CSIE7435_NanoGPTProject
 
-NanoGPT: https://github.com/karpathy/nanoGPT
-
 ## Project Description
 
 In this project, you will explore the implementation of GPT-2 through the lightweight framework NanoGPT, with the goal of connecting mathematical definitions to practical code and improving the implementation.
@@ -15,3 +13,13 @@ KV Caching: We introduce KV caching in the slides (see Section Prediction in the
 
 ## This Code
 Modify NanoGPT's `model.py` to implement a key-value cache for inference and analyze the time consumption of each computational component. Also implement `experiment.py` for experimental purposes.
+
+## How to run
+
+1. Clone the official nanopt repository and import my two extra files (the `model.py` file should be overwritten). (NanoGPT: https://github.com/karpathy/nanoGPT)
+
+2. Find a dataset that interests you, organize it according to the instructions in the official NanoGPT GitHub repository, and train your model.
+
+3. Modify the experiment configuration in `experiment.py` to compare the inference speed with and without caching.
+
+4. When running `sample.py` normally, you can also set `use_cache=True` to use the cache to speed up inference.
